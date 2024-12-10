@@ -1,5 +1,5 @@
 import React from "react";
-import Typing from "./react-typing-effect";
+import Typing from "react-typing-effect";
 
 // Importing assets
 import resumePDF from "../assets/resume.pdf"; // Path to your resume PDF
