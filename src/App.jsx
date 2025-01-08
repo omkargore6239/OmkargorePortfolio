@@ -1,23 +1,21 @@
 import React from 'react';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Services from './components/Services';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-// import SocialMediaLinks from './components/SocialMediaLinks';
-import Footer from './components/Footer';
+import Hero from './pages/Hero';
+import About from './pages/About';
+import Services from './pages/Services';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Footer from './pages/Footer';
 
 
 const App = () => (
   <div>
     <Header />
     <Hero />
-    <About />
     <Services />
     <Projects />
+    <About />
     <Contact />
-    {/* <SocialMediaLinks/> */}
     <Footer/>
   </div>
 );

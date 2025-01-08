@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Contact = () => (
   <section
     id="contact"
-    className="py-16 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white"
+    className="py-16 bg-gradient-to-br from-gray-100 via-gray-200 to-gray-100 text-gray-800"
   >
     <motion.div
       className="container mx-auto px-6 lg:px-20"
@@ -12,29 +12,31 @@ const Contact = () => (
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
-      <h2 className="text-3xl lg:text-5xl font-bold text-right">Contact Me</h2>
+      <h2 className="text-3xl lg:text-5xl font-bold text-center text-gray-900">
+        Contact Me
+      </h2>
       <form className="mt-8 max-w-xl mx-auto space-y-6">
         <input
           type="text"
           placeholder="Your Name"
-          className="w-full p-4 bg-gray-800 rounded-lg text-white"
+          className="w-full p-4 bg-white text-gray-800 rounded-lg shadow-lg focus:ring-2 focus:ring-blue-500"
           required
         />
         <input
           type="email"
           placeholder="Your Email"
-          className="w-full p-4 bg-gray-800 rounded-lg text-white"
+          className="w-full p-4 bg-white text-gray-800 rounded-lg shadow-lg focus:ring-2 focus:ring-blue-500"
           required
         />
         <textarea
           placeholder="Your Message"
-          className="w-full p-4 bg-gray-800 rounded-lg text-white"
+          className="w-full p-4 bg-white text-gray-800 rounded-lg shadow-lg focus:ring-2 focus:ring-blue-500"
           rows="5"
           required
         ></textarea>
         <motion.button
           type="submit"
-          className="w-full bg-blue-500 py-3 rounded-lg hover:bg-blue-400"
+          className="w-full bg-blue-500 py-3 rounded-lg text-white hover:bg-blue-400 focus:ring-2 focus:ring-blue-500"
           whileHover={{ scale: 1.05 }}
         >
           Send Message
